@@ -31,6 +31,10 @@ def regression(input):
 def convolutional(input):
     return sess.run(y2, feed_dict={x: input, keep_prob: 1.0}).flatten().tolist()
 
+# Chatbot Session
+def chatbot(user_request):
+    bot_response = 'Bot Response from model.py'
+    return bot_response
 
 # webapp
 app = Flask(__name__)
