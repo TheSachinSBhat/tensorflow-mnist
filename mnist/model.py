@@ -8,11 +8,6 @@ def regression(x):
     y = tf.nn.softmax(tf.matmul(x, W) + b)
     return y, [W, b]
 
-# Chatbot Model
-def chatbot(user_request):
-    bot_response = 'Bot Response from model.py'
-    return bot_response
-
 # Multilayer Convolutional Network
 def convolutional(x, keep_prob):
     def conv2d(x, W):
